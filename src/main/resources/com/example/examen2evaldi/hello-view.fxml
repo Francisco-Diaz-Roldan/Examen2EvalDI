@@ -14,7 +14,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane prefHeight="391.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen2evaldi.controller.HelloController">
    <top>
       <FlowPane alignment="TOP_CENTER" prefHeight="26.0" prefWidth="200.0" BorderPane.alignment="CENTER">
@@ -114,7 +113,7 @@
                         <Tooltip text="EmptyCon este botón se va a calcular el GER y el GET" />
                      </tooltip>
                   </Button>
-                  <Button fx:id="printPDF" mnemonicParsing="false" text="Imprimir PDF" />
+                  <Button mnemonicParsing="false" onAction="#printPDF" text="Imprimir PDF" />
                </children>
             </HBox>
          </children>

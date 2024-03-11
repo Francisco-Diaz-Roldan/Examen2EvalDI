@@ -136,7 +136,7 @@ public class HelloController implements Initializable {
     public void printPDF(ActionEvent actionEvent) {
         Stage primaryStage = new Stage();
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/informacioncliente", "root", "");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/examendi", "root", "");
             JasperPrint jasperPrint = JasperFillManager.fillReport("Examendi.jasper",null, connection);
             SwingNode swingNode = new SwingNode();
             contenidoEnSwing(swingNode, jasperPrint);
